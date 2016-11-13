@@ -74,7 +74,7 @@ int main()
   std::cout << animals.right.count(8) << '\n';
 }
 ```
-[Пример 13.3](#exmaple133) определяет `boost::bimaps::set_of`. Другие типы контейнеров, кроме `boost::bimaps::set_of` могут быть использованы для настройки `boost::bimap`.
+[Пример 13.3](#example133) определяет `boost::bimaps::set_of`. Другие типы контейнеров, кроме `boost::bimaps::set_of` могут быть использованы для настройки `boost::bimap`.
 
 <a name="example134"></a>
 ### Пример 13.4. Предоставление дубликатов с `boost::bimaps::multiset_of`
