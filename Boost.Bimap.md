@@ -131,8 +131,8 @@ int main()
 ```
 `boost::bimaps::unconstrained_set_of` может использоваться, чтобы исключить одну сторону boost::bimap. В [Примере 13.5](#example135), `boost::bimap` ведет себя как `std::map`. Вы не можете получить доступ к **right**, чтобы искать животных по ногам.
 
-[Пример 13.5](#example135) иллюстрирует другую причину, почему может иметь смысл предпочитать `boost::bimap` нежели `std::map`. Так как Boost.Bimap основан на Boost.MultiIndex, доступны функции-члены из Boost.MultiIndex. [Пример 13.5](#example135) изменяет ключ, используя modify_key() – то, что невозможно с `std::map`.
+[Пример 13.5](#example135) иллюстрирует другую причину, почему может иметь смысл предпочитать `boost::bimap` нежели `std::map`. Так как Boost.Bimap основан на Boost.MultiIndex, доступны функции из Boost.MultiIndex. [Пример 13.5](#example135) изменяет ключ, используя modify_key() – то, что невозможно с `std::map`.
 
 Обратите внимание, как изменяется ключ. Новое значение присваивается текущему ключу, с использованием **boost::bimaps::_key**, который определен в `boost/bimap/support/lambda.hpp`.
 
-`boost/bimap/support/lambda.hpp` также определяет **boost::bimaps::_data**. При вызове функции-члена `modify_data()`, **boost::bimaps::_data** может использоваться, чтобы изменить значение в контейнере типа `boost::bimap`.
+`boost/bimap/support/lambda.hpp` также определяет **boost::bimaps::_data**. При вызове функции `modify_data()`, **boost::bimaps::_data** может использоваться, чтобы изменить значение в контейнере типа `boost::bimap`.
